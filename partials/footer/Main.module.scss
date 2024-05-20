@@ -1,0 +1,24 @@
+.footer {
+	background-color: light-dark(var(--mantine-color-priLight-light), var(--mantine-color-secDark-light));
+	// border-top: 1px solid light-dark(transparent, var(--mantine-color-secDark-4));
+}
+
+.listItem {
+	text-align: end;
+
+	@include smaller-than($mantine-breakpoint-md) {
+		text-align: center;
+	}
+}
+
+.link {
+	transition: 0.25s all ease;
+
+	color: light-dark(var(--mantine-color-secLight-7), var(--mantine-color-secDark-4));
+
+	@include hover {
+		text-decoration: none;
+
+		color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-bgLight-0));
+	}
+}
