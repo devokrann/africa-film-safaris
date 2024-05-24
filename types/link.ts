@@ -3,4 +3,5 @@ export interface typeLink {
 	label: string;
 	alt?: string;
 	title?: string;
+	target?: string;
 }
