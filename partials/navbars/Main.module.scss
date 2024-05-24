@@ -1,0 +1,14 @@
+.navbar {
+	// background-color: var(--mantine-color-body);
+	// border-bottom: rem(1px) solid light-dark(var(--mantine-color-secLight-7), var(--mantine-color-secDark-4));
+	padding: var(--mantine-spacing-xs) 0;
+}
+
+.logo {
+	width: 120px;
+	height: auto;
+
+	@include smaller-than($mantine-breakpoint-xs) {
+		width: 80px;
+	}
+}

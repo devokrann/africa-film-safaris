@@ -1,0 +1,11 @@
+.card {
+	background-color: light-dark(var(--mantine-color-priLight-light), var(--mantine-color-secDark-light));
+	border: 4px solid light-dark(var(--mantine-color-secLight-light), var(--mantine-color-secDark-light));
+	background-position: center center;
+	background-size: cover;
+	color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-secDark-4));
+}
+
+.desc {
+	color: light-dark(var(--mantine-color-secLight-7), var(--mantine-color-bgLight-0));
+}

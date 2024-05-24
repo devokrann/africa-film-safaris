@@ -1,0 +1,37 @@
+.body {
+	padding: 0;
+}
+
+.close {
+}
+
+.header {
+	padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+	box-shadow: var(--mantine-shadow-xs);
+	background-color: light-dark(var(--mantine-color-bgLight-0), var(--mantine-color-secDark-4));
+	color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-bgLight-0));
+}
+
+.content {
+	background-color: light-dark(var(--mantine-color-bgLight-0), var(--mantine-color-secDark-4));
+	color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-bgLight-0));
+}
+
+.inner {
+}
+
+.overlay {
+}
+
+.root {
+}
+
+.title {
+}
+
+// navlink
+.link {
+	@include hover {
+		background-color: light-dark(var(--mantine-color-priLight-light), var(--mantine-color-priLight-light));
+	}
+}
