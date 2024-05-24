@@ -11,11 +11,9 @@ import NextImage from "next/image";
 
 import classes from "./Partner.module.scss";
 
-import partner1 from "@/assets/images/partners/partner-1.png";
-import partner2 from "@/assets/images/partners/partner-2.png";
-import partner3 from "@/assets/images/partners/partner-3.png";
-import partner4 from "@/assets/images/partners/partner-4.png";
-import partner5 from "@/assets/images/partners/partner-5.png";
+import partner1 from "@/assets/images/partners/partner-1.webp";
+import partner2 from "@/assets/images/partners/partner-2.webp";
+import partner3 from "@/assets/images/partners/partner-3.webp";
 
 const partners = [
 	{
@@ -32,16 +30,6 @@ const partners = [
 		image: partner3,
 		alt: "partner3",
 		link: "#3",
-	},
-	{
-		image: partner4,
-		alt: "partner4",
-		link: "#4",
-	},
-	{
-		image: partner5,
-		alt: "partner5",
-		link: "#5",
 	},
 ];
 

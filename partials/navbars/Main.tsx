@@ -11,14 +11,13 @@ import NavigationMain from "@/components/navigation/Main";
 import DrawerNavMain from "@/components/drawers/nav/Main";
 
 import links from "@/data/links";
-import brandLight from "@/assets/icons/brand/logo-light.svg";
-import brandDark from "@/assets/icons/brand/logo-dark.svg";
+import brandLight from "@/assets/icons/brand/logo-slogan-light.webp";
 
 import classes from "./Main.module.scss";
 
 export default async function Main() {
 	return (
-		<Section withClerk className={classes.navbar} shadowed>
+		<Section className={classes.navbar} shadowed>
 			<Container size={"responsive"}>
 				<Group justify="space-between">
 					<Box>

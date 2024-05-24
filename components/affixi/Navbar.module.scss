@@ -1,0 +1,7 @@
+.affix {
+	box-shadow: var(--mantine-shadow-sm);
+	background-color: light-dark(rgba($color: #fefceb, $alpha: 0.8), rgba($color: #fefceb, $alpha: 0.8));
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border-bottom: 1px solid light-dark(var(--mantine-color-secDark-4), var(--mantine-color-secDark-4));
+}
