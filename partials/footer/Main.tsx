@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Flex, Image as MantineImage, Text, Title, Group, Box, Button, Stack } from "@mantine/core";
+import { Flex, Image as MantineImage, Text, Title, Group, Box, Button, Stack, Center } from "@mantine/core";
 
 import { Icon } from "@tabler/icons-react";
 
@@ -97,14 +97,16 @@ export default function Main() {
 								href={social.link}
 								target={social.target ? social.target : undefined}
 							>
-								<MantineImage
-									src={social.icon}
-									alt="next logo"
-									h={{ base: 24, sm: 20 }}
-									hiddenFrom="xs"
-									component={Image}
-									priority
-								/>
+								<Center hiddenFrom="xs">
+									<MantineImage
+										src={social.icon}
+										alt="next logo"
+										h={{ base: 20, sm: 24 }}
+										component={Image}
+										priority
+									/>
+								</Center>
+
 								<Text component="span" inherit visibleFrom="xs">
 									{social.label}
 								</Text>
