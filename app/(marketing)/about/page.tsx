@@ -131,11 +131,9 @@ export default async function About() {
 				<Stack gap={"xl"}>
 					<Stack gap={"xl"}>
 						<Title ta={"center"} order={2}>
-							Filmmakers Helping Filmmakers
+							Our Partners
 						</Title>
-						<Text ta={"center"}>
-							Empowering filmmakers to tell authentic Kenyan stories through seamless production support.
-						</Text>
+						<Text ta={"center"}>Some of the organizations we work with</Text>
 					</Stack>
 
 					<Grid justify="center">
