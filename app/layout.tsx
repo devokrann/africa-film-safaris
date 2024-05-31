@@ -29,7 +29,8 @@ const noto = Noto_Serif_Display({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: { default: "Africa Film Safaris", template: "%s - Africa Film Safaris" },
-	description: "App description",
+	description:
+		"At Africa Film Safaris, we're passionate about simplifying filmmaking in Kenya. Our team of experienced filmmakers and local experts understands the challenges of on-location production firsthand. We've navigated the permits, scouted diverse locations, and built a network of reliable partners. Whether you're an independent filmmaker, a documentary team, or a mid-sized production, we offer comprehensive, stress-free support tailored to your unique needs. From securing permits and scouting locations to arranging logistics, equipment, and local talent, we'll handle every detail so you can focus on bringing your creative vision to life in the heart of East Africa.",
 };
 
 export default async function RootLayout({
