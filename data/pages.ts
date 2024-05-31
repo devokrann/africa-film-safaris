@@ -4,9 +4,13 @@ import help1 from "@/assets/images/services/service-1.webp";
 import help2 from "@/assets/images/services/service-8.webp";
 import help3 from "@/assets/images/services/service-3.webp";
 
-import kenya1 from "@/assets/images/kenya/kenya-1.webp";
-import kenya2 from "@/assets/images/kenya/kenya-2.webp";
-import kenya3 from "@/assets/images/kenya/kenya-3.webp";
+import location1 from "@/assets/images/locations/location-1.webp";
+import location2 from "@/assets/images/locations/location-2.webp";
+import location3 from "@/assets/images/locations/location-3.webp";
+import location4 from "@/assets/images/locations/location-4.webp";
+import location5 from "@/assets/images/locations/location-5.webp";
+import location6 from "@/assets/images/locations/location-6.webp";
+import location7 from "@/assets/images/locations/location-7.webp";
 
 const pages = {
 	home: {
@@ -45,18 +49,48 @@ const pages = {
 					"Reliable transport, crew-friendly logistics, getting you where you need to be on schedule",
 			},
 		],
-		kenya: [
+		whyKenya: [
 			{
-				image: kenya1,
-				title: "Why Kenya 1",
+				image: location1,
+				title: "Nairobi",
+				description:
+					"The vibrant capital city offers a mix of modern and historic architecture, bustling markets, and diverse cultural experiences.",
 			},
 			{
-				image: kenya2,
-				title: "Why Kenya 2",
+				image: location7,
+				title: "Masai Mara National Reserve",
+				description:
+					'This iconic savanna is teeming with wildlife, offering stunning vistas, exceptional opportunities to capture the "Big Five", and the dramatic annual Great Migration.',
 			},
 			{
-				image: kenya3,
-				title: "Why Kenya 3",
+				image: location2,
+				title: "Amboseli National Park",
+				description:
+					"Renowned for its breathtaking views of Mount Kilimanjaro, diverse wildlife, and unique Maasai culture, this park offers unforgettable scenery and cultural immersion.",
+			},
+			{
+				image: location4,
+				title: "Great Rift Valley",
+				description:
+					"A geological marvel boasting stunning lakes, volcanoes, and diverse ecosystems. This location provides a unique backdrop for documentaries and dramatic scenes.",
+			},
+			{
+				image: location6,
+				title: "Lamu Island",
+				description:
+					"A UNESCO World Heritage Site, Lamu Island offers a glimpse into Swahili history with its charming architecture, vibrant culture, and beautiful beaches.",
+			},
+			{
+				image: location5,
+				title: "Diani Beach",
+				description:
+					"With its picturesque white sand beaches and clear turquoise waters, Diani Beach offers a serene and idyllic setting for filming.",
+			},
+			{
+				image: location3,
+				title: "Tsavo National Park",
+				description:
+					"Kenya's largest national park, Tsavo boasts diverse wildlife, including the famous red elephants, making it a prime location for nature documentaries.",
 			},
 		],
 	},
