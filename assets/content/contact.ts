@@ -4,6 +4,7 @@ const appName = companyName;
 const contact = {
 	name: { company: companyName, app: appName },
 	phones: [{ type: "", label: "", value: "" }],
+
 	email: [{ type: "", value: "" }],
 	socials: [
 		{

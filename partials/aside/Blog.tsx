@@ -28,7 +28,7 @@ export default function Blog() {
 								color="light-dark(var(--mantine-color-priLight-8),var(--mantine-color-priLight-8))"
 								variant="outline"
 								component="a"
-								href="tel:+123-456-789"
+								href="tel:+254716046074"
 							>
 								Contact Us
 							</Button>

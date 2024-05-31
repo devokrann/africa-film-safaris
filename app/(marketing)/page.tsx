@@ -7,8 +7,9 @@ import { AspectRatio, Grid, GridCol, Stack, Text, Title, Image, Button } from "@
 
 import Page from "@/layouts/Page";
 import Section from "@/layouts/Section";
-import CardWhy from "@/components/cards/home/Why";
-import CardHelp from "@/components/cards/home/Help";
+import CardHomeWhy from "@/components/cards/home/Why";
+import CardHomeHelp from "@/components/cards/home/Help";
+import CardHomeKenya from "@/components/cards/home/Kenya";
 
 import dataPages from "@/data/pages";
 import { IconArrowRight } from "@tabler/icons-react";
@@ -27,7 +28,7 @@ export default function Home() {
 					<Grid justify="center">
 						{dataPages.home.why.map(item => (
 							<GridCol key={item.title} span={{ base: 12, sm: 6, md: 4 }}>
-								<CardWhy data={item} />
+								<CardHomeWhy data={item} />
 							</GridCol>
 						))}
 					</Grid>
@@ -48,7 +49,7 @@ export default function Home() {
 					<Grid justify="center" gutter={{ base: "xl", sm: "md" }}>
 						{dataPages.home.help.map(item => (
 							<GridCol key={item.title} span={{ base: 12, sm: 6, md: 4 }}>
-								<CardHelp data={item} />
+								<CardHomeHelp data={item} />
 							</GridCol>
 						))}
 					</Grid>
@@ -73,9 +74,11 @@ export default function Home() {
 					</Stack>
 
 					<Grid justify="center" w={"100%"}>
-						{dataPages.home.kenya.map(item => (
-							<GridCol key={item.title} span={{ base: 12, sm: 6, md: 4 }}>
-								<AspectRatio ratio={1920 / 1080}>
+						{dataPages.home.whyKenya.map(item => (
+							<GridCol key={item.title} span={{ base: 12, sm: 6, md: 4, lg: 3 }}>
+								<CardHomeKenya data={item} />
+
+								{/* <AspectRatio ratio={1920 / 1080}>
 									<Image
 										src={item.image}
 										alt={item.title}
@@ -84,19 +87,19 @@ export default function Home() {
 										radius={"md"}
 										component={NextImage}
 									/>
-								</AspectRatio>
+								</AspectRatio> */}
 							</GridCol>
 						))}
 					</Grid>
 
-					<Button
+					{/* <Button
 						variant="subtle"
 						rightSection={<IconArrowRight size={20} />}
 						component={Link}
 						href={"#about/why-kenya"}
 					>
 						Why Kenya
-					</Button>
+					</Button> */}
 				</Stack>
 			</Section>
 		</Page>

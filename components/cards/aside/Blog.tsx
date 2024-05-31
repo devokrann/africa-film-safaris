@@ -34,16 +34,18 @@ export default function Blog({ data }: { data: typeBlog }) {
 			<GridCol span={{ md: 4 }}>
 				<Anchor component={Link} href={`/blog/${link.linkify(data.title)}`} fz={"xs"}>
 					<AspectRatio ratio={3 / 2} className={classes.imageContainer}>
-						<MediaImage alt={"placeholder"} width={100} height={100} />
-						{/* <Image
-							src={data.image}
-							alt={data.title}
-							w={"100%"}
-							radius={'md'}
-							loading="lazy"
-							component={NextImage}
-							className={classes.image}
-						/> */}
+						{data.image ? (
+							<Image
+								src={data.image}
+								alt={data.title}
+								w={"100%"}
+								loading="lazy"
+								component={NextImage}
+								className={classes.image}
+							/>
+						) : (
+							<MediaImage alt={"placeholder"} width={100} height={100} />
+						)}
 					</AspectRatio>
 				</Anchor>
 			</GridCol>

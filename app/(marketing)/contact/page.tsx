@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Metadata } from "next";
+import Link from "next/link";
 
 import { Anchor, Grid, GridCol, Group, Stack, Text, Title } from "@mantine/core";
 
@@ -32,10 +33,14 @@ export default async function Contact() {
 								Don't hesitate to ask us a question
 							</Text>
 							<Text>
-								Nulla facilisi. Praesent non mauris ac ligula ullamcorper vehicula. Praesent mollis,
-								nibh in venenatis iaculis, mauris eros iaculis quam, ut aliquam nisi nunc vitae quam.
-								Fusce faucibus, felis at fermentum convallis, nunc neque aliquam turpis, ut varius ipsum
-								nisi eu magna. Sed euismod laoreet nisi, eu iaculis elit scelerisque non.
+								At Africa Film Safaris, we're passionate about simplifying filmmaking in Kenya. Our team
+								of experienced filmmakers and local experts understands the challenges of on-location
+								production firsthand. We've navigated the permits, scouted diverse locations, and built
+								a network of reliable partners. Whether you're an independent filmmaker, a documentary
+								team, or a mid-sized production, we offer comprehensive, stress-free support tailored to
+								your unique needs. From securing permits and scouting locations to arranging logistics,
+								equipment, and local talent, we'll handle every detail so you can focus on bringing your
+								creative vision to life in the heart of East Africa.
 							</Text>
 							<Stack gap={"xs"}>
 								{links.contact.map(item => (
@@ -56,7 +61,16 @@ export default async function Contact() {
 						</Stack>
 					</GridCol>
 					<GridCol span={{ base: 12, md: 6 }}>
-						<FormContact />
+						<Stack>
+							<FormContact />
+							<Text fz={"sm"} ta={"center"} fw={500}>
+								See the{" "}
+								<Anchor component={Link} href="/faq" inherit>
+									FAQ's
+								</Anchor>{" "}
+								for more information.
+							</Text>
+						</Stack>
 					</GridCol>
 				</Grid>
 			</Section>

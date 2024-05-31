@@ -47,7 +47,7 @@ const socials: typeSocial[] = [
 		color: "black",
 	},
 	{
-		link: "#https://wa.link", // generate new link with AFS phone number
+		link: "https://wa.link/16pzlw",
 		label: "WhatsApp",
 		target: "_blank",
 		icon: whatsapp,
@@ -56,9 +56,11 @@ const socials: typeSocial[] = [
 ];
 
 export default function Main() {
+	const year = new Date().getFullYear();
+
 	return (
 		<Box className={classes.footer}>
-			<Section containerized={"md"} shadowed padded={"xl"}>
+			<Section containerized={"responsive"} shadowed padded={"xl"}>
 				<Flex direction={"column"} align={"center"} gap={"md"}>
 					<MantineImage
 						src={brandLight}
@@ -68,15 +70,20 @@ export default function Main() {
 						priority
 					/>
 					<Title className="textResponsive" ta={"center"}>
-						Nulla facilisi. Praesent non mauris ac ligula ullamcorper vehicula. Praesent mollis, nibh in
-						venenatis iaculis, mauris eros iaculis quam, ut aliquam nisi nunc vitae quam. Fusce faucibus,
-						felis at fermentum convallis, nunc neque aliquam turpis, ut varius ipsum nisi eu magna.
+						At Africa Film Safaris, we're passionate about simplifying filmmaking in Kenya. Our team of
+						experienced filmmakers and local experts understands the challenges of on-location production
+						firsthand. We've navigated the permits, scouted diverse locations, and built a network of
+						reliable partners. Whether you're an independent filmmaker, a documentary team, or a mid-sized
+						production, we offer comprehensive, stress-free support tailored to your unique needs. From
+						securing permits and scouting locations to arranging logistics, equipment, and local talent,
+						we'll handle every detail so you can focus on bringing your creative vision to life in the heart
+						of East Africa.
 					</Title>
 				</Flex>
 			</Section>
 
 			<Section containerized={"md"} padded={"xl"}>
-				<Stack>
+				<Stack gap={"lg"}>
 					<Group grow mx={"auto"} w={{ base: "100%", md: "80%" }}>
 						{socials.map(social => (
 							<Button
@@ -119,7 +126,7 @@ export default function Main() {
 						fz={{ base: "xs", xs: "sm" }}
 						ta={"center"}
 					>
-						Copyright 2024 © Africa Film Safaris.
+						Copyright {year} © Africa Film Safaris.
 					</Text>
 				</Stack>
 			</Section>
