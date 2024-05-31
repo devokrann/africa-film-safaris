@@ -20,15 +20,18 @@ export default function Blog({ data }: { data: typeBlog }) {
 			<Stack h={"100%"}>
 				<CardSection>
 					<AspectRatio ratio={3 / 2} className={classes.imageContainer}>
-						<MediaImage alt={"placeholder"} width={900} height={600} />
-						{/* <Image
-							src={data.image}
-							alt={data.title}
-							w={"100%"}
-							loading="lazy"
-							component={NextImage}
-							className={classes.image}
-						/> */}
+						{data.image ? (
+							<Image
+								src={data.image}
+								alt={data.title}
+								w={"100%"}
+								loading="lazy"
+								component={NextImage}
+								className={classes.image}
+							/>
+						) : (
+							<MediaImage alt={"placeholder"} width={900} height={600} />
+						)}
 					</AspectRatio>
 				</CardSection>
 

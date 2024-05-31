@@ -1,17 +1,19 @@
 import React from "react";
 
 import { Metadata } from "next";
+import NextImage from "next/image";
+
+import { AspectRatio, Card, CardSection, Stack, Text, Title, Image } from "@mantine/core";
 
 import Page from "@/layouts/Page";
 import Section from "@/layouts/Section";
+import MediaImage from "@/components/media/Image";
 
 import link from "@/handlers/parsers/string/link";
 
 import dataBlogs from "@/data/blogs";
 
 import { typeParams } from "./layout";
-import { AspectRatio, Card, CardSection, Stack, Text, Title } from "@mantine/core";
-import MediaImage from "@/components/media/Image";
 
 export const generateMetadata = ({ params }: typeParams): Metadata => {
 	return { title: link.unlinkify(params.blogId) };
@@ -27,15 +29,17 @@ export default function BlogDetails({ params }: typeParams) {
 					<Stack gap={"xl"}>
 						<CardSection>
 							<AspectRatio ratio={1920 / 1080}>
-								<MediaImage alt={"placeholder"} width={1920} height={1080} />
-								{/* <Image
-							src={data.image}
-							alt={data.title}
-							w={"100%"}
-							loading="lazy"
-							component={NextImage}
-							className={classes.image}
-						/> */}
+								{blogData?.image ? (
+									<Image
+										src={blogData?.image}
+										alt={blogData?.title}
+										w={"100%"}
+										loading="lazy"
+										component={NextImage}
+									/>
+								) : (
+									<MediaImage alt={"placeholder"} width={1920} height={1080} />
+								)}
 							</AspectRatio>
 						</CardSection>
 
