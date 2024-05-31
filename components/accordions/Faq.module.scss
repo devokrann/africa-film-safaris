@@ -1,0 +1,12 @@
+.control {
+	transition: 0.25s all ease;
+
+	@include hover {
+		background-color: light-dark(var(--mantine-color-priLight-light), var(--mantine-color-priLight-light));
+	}
+}
+
+.label {
+	color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-priLight-8));
+	font-weight: bold;
+}
