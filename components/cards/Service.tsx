@@ -44,7 +44,7 @@ export default function Service({ data }: { data: typeService }) {
 					<Group justify="end">
 						<ModalService data={data}>
 							<Button color="secDark.4" variant="light">
-								See {data.title}
+								Learn More
 							</Button>
 						</ModalService>
 					</Group>
