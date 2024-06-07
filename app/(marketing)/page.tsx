@@ -56,7 +56,8 @@ export default function Home() {
 
 					<Button
 						variant="subtle"
-						rightSection={<IconArrowRight size={20} />}
+						color="priLight.8"
+						rightSection={<IconArrowRight size={20} stroke={1.5} />}
 						component={Link}
 						href={"/services"}
 					>
@@ -75,7 +76,7 @@ export default function Home() {
 
 					<Grid justify="center" w={"100%"}>
 						{dataPages.home.whyKenya.map(item => (
-							<GridCol key={item.title} span={{ base: 12, sm: 6, md: 4, lg: 3 }}>
+							<GridCol key={item.title} span={{ base: 12, sm: 6, lg: 3 }}>
 								<CardHomeKenya data={item} />
 
 								{/* <AspectRatio ratio={1920 / 1080}>
