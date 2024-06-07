@@ -1,6 +1,6 @@
 import { IconDiscount, IconLicense, IconUsersGroup } from "@tabler/icons-react";
 
-import help1 from "@/assets/images/help/help-1.svg";
+import help1 from "@/assets/images/help/help-1.jpg";
 import help2 from "@/assets/images/help/help-2.jpeg";
 import help3 from "@/assets/images/help/help-3.webp";
 
