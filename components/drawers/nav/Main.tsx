@@ -87,7 +87,7 @@ export default function Main({ data, ...restProps }: { data: typeMenuNavbar[] } 
 					root: classes.root,
 					title: classes.title,
 				}}
-				title={<Image src={brandLight} w={32} h={32} alt="AFS" component={NextImage} priority />}
+				title={<Image src={brandLight} w={32} h={32} alt="AFS" component={NextImage} loading="lazy" />}
 			>
 				{navMobile}
 			</Drawer>
