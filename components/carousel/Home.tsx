@@ -105,7 +105,7 @@ export default function Home() {
 							</Flex>
 
 							<Flex direction={{ base: "column", sm: "row" }} align={"center"} gap={"xs"}>
-								<Button color="secLight.7" component={Link} href={"/contact"}>
+								<Button color="secLight.7" c={"priLight.8"} component={Link} href={"/contact"}>
 									Tell Us About Your Project
 								</Button>
 								<Button color="priLight.8" component={Link} href={"/services"}>
