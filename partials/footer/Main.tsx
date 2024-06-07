@@ -69,7 +69,7 @@ export default function Main() {
 				<Flex direction={"column"} align={"center"} gap={"md"}>
 					<MantineImage
 						src={brandLight}
-						alt="next logo"
+						alt="Africa Film Safaris"
 						w={{ base: 120, sm: 160 }}
 						component={Image}
 						priority
