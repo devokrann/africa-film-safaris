@@ -25,26 +25,26 @@ export const Contact = ({
 
 		<Body>
 			<Container style={content}>
-				<Section style={header}>
+				{/* <Section style={header}>
 					<Container style={container}>
 						<Heading style={{ ...h1, textAlign: "center" }}>{constants.brand.name}</Heading>
-						{/* <Img
+						<Img
 							src={
 								"https://africa-film-safaris.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-light.e97db029.svg&w=1920&q=75"
 							}
 							width={120}
 							height={'auto'}
 							alt={constants.brand.name}
-						/> */}
+						/>
 					</Container>
-				</Section>
+				</Section> */}
 
 				<Section style={main}>
 					<Container style={container}>
 						<Section style={section}>
 							{/* <Heading style={h2}>{constants.brand.name}</Heading> */}
 							<Text style={text}>
-								Recipient, <br />
+								Africa Film Safaris, <br />
 								{data.message} <br />
 								<br />
 								Regards, <br />
@@ -61,7 +61,7 @@ export const Contact = ({
 					</Container>
 				</Section>
 
-				<Section style={footer}>
+				{/* <Section style={footer}>
 					<Container style={container}>
 						<Text style={{ ...text, textAlign: "center" }}>
 							© {constants.year}, {constants.brand.name}. All rights reserved. Read our{" "}
@@ -77,7 +77,7 @@ export const Contact = ({
 							{constants.addresses.find(a => a.place == "Main Office")?.label}.
 						</Text>
 					</Container>
-				</Section>
+				</Section> */}
 			</Container>
 		</Body>
 	</Html>
@@ -92,7 +92,8 @@ const content = {
 };
 
 const headerFooter = {
-	backgroundColor: "orange",
+	backgroundColor: "#273518",
+	color: "#ffffff",
 	padding: "20px 0",
 };
 
@@ -112,17 +113,18 @@ const main = {
 };
 
 const section = {
-	margin: "20px 0",
+	margin: "20px 0px",
 };
 
 const container = {
 	minWidth: "100%",
-	padding: "0 20px",
+	padding: "20px 0px",
 };
 
 const h1 = {
 	fontSize: "24px",
 	fontWeight: "bolder",
+	color: "#be6d25",
 };
 
 const h2 = {

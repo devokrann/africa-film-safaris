@@ -8,6 +8,7 @@ import { Anchor, Grid, GridCol, Group, Stack, Text, Title } from "@mantine/core"
 import Page from "@/layouts/Page";
 import Section from "@/layouts/Section";
 import FormContact from "@/partials/forms/Contact";
+import TemplateEmailContact from "@/templates/email/Contact";
 
 import links from "@/data/links";
 
@@ -18,6 +19,8 @@ export const metadata: Metadata = {
 export default async function Contact() {
 	return (
 		<Page>
+			{/* <TemplateEmailContact /> */}
+
 			<Section containerized={"responsive"} padded shadowed>
 				<Grid gutter={64}>
 					<GridCol span={{ base: 12, md: 6 }}>
