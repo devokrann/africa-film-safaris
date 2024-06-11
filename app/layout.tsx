@@ -21,7 +21,7 @@ import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import { Notifications } from "@mantine/notifications";
 import { ModalsProvider } from "@mantine/modals";
 
-import { SpeedInsights } from "@vercel/speed-insights/next";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import africafilmsafaris from "@/theme";
 
@@ -44,7 +44,7 @@ export default async function RootLayout({
 				<ColorSchemeScript defaultColorScheme="light" />
 			</head>
 			<body className={noto.className}>
-				<SpeedInsights />
+				{/* <SpeedInsights /> */}
 
 				<MantineProvider
 					theme={africafilmsafaris}
