@@ -14,12 +14,6 @@
 	}
 }
 
-.title {
-	color: light-dark(var(--mantine-color-secDark-4), var(--mantine-color-bgLight-0));
-	font-size: var(--mantine-font-size-lg);
-	// min-height: 56px;
-}
-
 .imageContainer {
 	overflow: hidden;
 }
@@ -27,4 +21,13 @@
 .image {
 	transition: 0.25s all ease;
 	transform: scale(1.05);
+}
+
+.link {
+	transition: 0.25s all ease;
+	color: light-dark(var(--mantine-color-secDark-4), var(--mantine-color-bgLight-0));
+
+	@include hover {
+		color: light-dark(var(--mantine-color-bgLight-0), var(--mantine-color-bgLight-0));
+	}
 }

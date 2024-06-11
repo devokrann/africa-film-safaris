@@ -1,8 +1,8 @@
 import { IconDiscount, IconLicense, IconUsersGroup } from "@tabler/icons-react";
 
-import help1 from "@/assets/images/services/service-1.webp";
-import help2 from "@/assets/images/services/service-8.webp";
-import help3 from "@/assets/images/services/service-3.webp";
+import help1 from "@/assets/images/help/help-1.jpg";
+import help2 from "@/assets/images/help/help-2.jpeg";
+import help3 from "@/assets/images/help/help-3.webp";
 
 import location1 from "@/assets/images/locations/location-1.webp";
 import location2 from "@/assets/images/locations/location-2.webp";
@@ -39,12 +39,12 @@ const pages = {
 			},
 			{
 				image: help2,
-				title: "Finding the Right Crew & Resources",
+				title: "Itinerary Design",
 				description: "Customized itineraries, expert scouting, maximizing your time and budget",
 			},
 			{
 				image: help3,
-				title: "Unexpected Costs & Delays",
+				title: "Ground Support",
 				description:
 					"Reliable transport, crew-friendly logistics, getting you where you need to be on schedule",
 			},

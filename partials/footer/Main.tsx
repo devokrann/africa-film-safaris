@@ -22,6 +22,7 @@ import { typeLink } from "@/types/link";
 interface typeSocial extends typeLink {
 	icon: Icon;
 	color: string;
+	textColor: string;
 }
 
 const socials: typeSocial[] = [
@@ -31,6 +32,7 @@ const socials: typeSocial[] = [
 		target: "_blank",
 		icon: instagram,
 		color: "red",
+		textColor: "red.9",
 	},
 	{
 		link: "https://www.facebook.com/share/6Wgguqf9vHzZomjc/?mibextid=qi2Omg",
@@ -38,6 +40,7 @@ const socials: typeSocial[] = [
 		target: "_blank",
 		icon: facebook,
 		color: "blue",
+		textColor: "blue.9",
 	},
 	{
 		link: "https://x.com/FilmSafaris?t=7_UGt53wKlo_xRj_sEBRqg&s=09",
@@ -45,6 +48,7 @@ const socials: typeSocial[] = [
 		target: "_blank",
 		icon: twitter,
 		color: "black",
+		textColor: "black.9",
 	},
 	{
 		link: "https://wa.link/16pzlw",
@@ -52,6 +56,7 @@ const socials: typeSocial[] = [
 		target: "_blank",
 		icon: whatsapp,
 		color: "green",
+		textColor: "green.9",
 	},
 ];
 
@@ -64,7 +69,7 @@ export default function Main() {
 				<Flex direction={"column"} align={"center"} gap={"md"}>
 					<MantineImage
 						src={brandLight}
-						alt="next logo"
+						alt="Africa Film Safaris"
 						w={{ base: 120, sm: 160 }}
 						component={Image}
 						priority
@@ -99,6 +104,7 @@ export default function Main() {
 									/>
 								}
 								color={social.color}
+								c={social.textColor}
 								variant="light"
 								component={Link}
 								href={social.link}

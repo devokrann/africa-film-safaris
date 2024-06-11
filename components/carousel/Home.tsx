@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import { Button, Center, Flex, Group, Image, Stack, Text, Title } from "@mantine/core";
 import { Carousel, CarouselSlide } from "@mantine/carousel";
+import { useMediaQuery } from "@mantine/hooks";
 
 import Autoplay from "embla-carousel-autoplay";
 
@@ -16,28 +17,44 @@ import Section from "@/layouts/Section";
 import classes from "./Home.module.scss";
 
 import bg1 from "@/assets/images/backgrounds/carousel/bg-1.webp";
+import bgMobile1 from "@/assets/images/backgrounds/carousel/bg-1-mobile.webp";
 import bg2 from "@/assets/images/backgrounds/carousel/bg-2.webp";
+import bgMobile2 from "@/assets/images/backgrounds/carousel/bg-2-mobile.webp";
 import bg3 from "@/assets/images/backgrounds/carousel/bg-3.webp";
+import bgMobile3 from "@/assets/images/backgrounds/carousel/bg-3-mobile.webp";
 import bg4 from "@/assets/images/backgrounds/carousel/bg-4.webp";
+import bgMobile4 from "@/assets/images/backgrounds/carousel/bg-4-mobile.webp";
 
 const slides = [
 	{
-		image: bg1,
+		image: {
+			desktop: bg1,
+			mobile: bgMobile1,
+		},
 		alt: "bg1",
 		link: "#1",
 	},
 	{
-		image: bg2,
+		image: {
+			desktop: bg2,
+			mobile: bgMobile2,
+		},
 		alt: "bg2",
 		link: "#2",
 	},
 	{
-		image: bg3,
+		image: {
+			desktop: bg3,
+			mobile: bgMobile3,
+		},
 		alt: "bg3",
 		link: "#3",
 	},
 	{
-		image: bg4,
+		image: {
+			desktop: bg4,
+			mobile: bgMobile4,
+		},
 		alt: "bg4",
 		link: "#4",
 	},
@@ -45,6 +62,7 @@ const slides = [
 
 export default function Home() {
 	const autoplay = useRef(Autoplay({ delay: 5000 }));
+	const mobile = useMediaQuery("(max-width: 36em)");
 
 	return (
 		<Carousel
@@ -61,7 +79,7 @@ export default function Home() {
 			{slides.map(slide => (
 				<CarouselSlide key={slide.alt}>
 					<Image
-						src={slide.image}
+						src={mobile ? slide.image.mobile : slide.image.desktop}
 						alt={slide.alt}
 						h={{ base: 960, xs: 720 }}
 						loading="lazy"
@@ -87,7 +105,7 @@ export default function Home() {
 							</Flex>
 
 							<Flex direction={{ base: "column", sm: "row" }} align={"center"} gap={"xs"}>
-								<Button color="secLight.7" component={Link} href={"/contact"}>
+								<Button color="secLight.7" c={"priLight.9"} component={Link} href={"/contact"}>
 									Tell Us About Your Project
 								</Button>
 								<Button color="priLight.8" component={Link} href={"/services"}>

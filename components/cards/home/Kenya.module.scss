@@ -12,10 +12,6 @@
 		.image {
 			transform: scale(1.05);
 		}
-
-		.title {
-			color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-priLight-8));
-		}
 	}
 }
 
@@ -29,6 +25,6 @@
 }
 
 .title {
-	color: light-dark(var(--mantine-color-secLight-7), var(--mantine-color-secLight-7));
+	color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-priLight-8));
 	transition: 0.25s all ease;
 }
