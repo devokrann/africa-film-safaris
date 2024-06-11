@@ -4,11 +4,13 @@ import resend from "@/services/resend";
 
 import { typeContact } from "@/types/form";
 
+const email = "info@africafilmsafaris.com";
+
 export const send = async (formData: typeContact) => {
-	const { data, error } = await resend.emails.send({
+	const { data, error } = await resend.general.emails.send({
 		// include & verify domain in dashboard before replacing it with "onboarding@resend.dev"
-		from: `${formData.fname} ${formData.lname} <onboarding@resend.dev>`,
-		to: ["devokrann.africa.film.safaris@proton.me"],
+		from: `${formData.fname} ${formData.lname} <${email}>`,
+		to: email,
 		subject: formData.subject,
 		react: TemplateEmailContact({ data: formData }),
 		reply_to: formData.email,
@@ -25,7 +27,7 @@ export const send = async (formData: typeContact) => {
 
 export const contacts = {
 	async create(formData: typeContact) {
-		const { data, error } = await resend.contacts.create({
+		const { data, error } = await resend.onboarding.contacts.create({
 			// include & verify domain in dashboard before replacing it with "onboarding@resend.dev"
 			email: formData.email,
 			firstName: formData.fname,
