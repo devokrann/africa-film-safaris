@@ -11,8 +11,8 @@ import classes from "./Service.module.scss";
 
 import links from "@/data/links";
 
-import brandLight from "@/public/icons/brand/logo-light.svg";
-import brandDark from "@/public/icons/brand/logo-dark.svg";
+import brandLight from "@/assets/icons/brand/logo-light.svg";
+import brandDark from "@/assets/icons/brand/logo-dark.svg";
 
 import { typeService } from "@/types/service";
 

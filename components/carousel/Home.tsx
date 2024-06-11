@@ -16,14 +16,14 @@ import Section from "@/layouts/Section";
 
 import classes from "./Home.module.scss";
 
-import bg1 from "@/public/images/backgrounds/carousel/bg-1.webp";
-import bgMobile1 from "@/public/images/backgrounds/carousel/bg-1-mobile.webp";
-import bg2 from "@/public/images/backgrounds/carousel/bg-2.webp";
-import bgMobile2 from "@/public/images/backgrounds/carousel/bg-2-mobile.webp";
-import bg3 from "@/public/images/backgrounds/carousel/bg-3.webp";
-import bgMobile3 from "@/public/images/backgrounds/carousel/bg-3-mobile.webp";
-import bg4 from "@/public/images/backgrounds/carousel/bg-4.webp";
-import bgMobile4 from "@/public/images/backgrounds/carousel/bg-4-mobile.webp";
+import bg1 from "@/assets/images/backgrounds/carousel/bg-1.webp";
+import bgMobile1 from "@/assets/images/backgrounds/carousel/bg-1-mobile.webp";
+import bg2 from "@/assets/images/backgrounds/carousel/bg-2.webp";
+import bgMobile2 from "@/assets/images/backgrounds/carousel/bg-2-mobile.webp";
+import bg3 from "@/assets/images/backgrounds/carousel/bg-3.webp";
+import bgMobile3 from "@/assets/images/backgrounds/carousel/bg-3-mobile.webp";
+import bg4 from "@/assets/images/backgrounds/carousel/bg-4.webp";
+import bgMobile4 from "@/assets/images/backgrounds/carousel/bg-4-mobile.webp";
 
 const slides = [
 	{

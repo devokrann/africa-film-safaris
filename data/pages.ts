@@ -1,16 +1,16 @@
 import { IconDiscount, IconLicense, IconUsersGroup } from "@tabler/icons-react";
 
-import help1 from "@/public/images/help/help-1.jpg";
-import help2 from "@/public/images/help/help-2.jpeg";
-import help3 from "@/public/images/help/help-3.webp";
+import help1 from "@/assets/images/help/help-1.jpg";
+import help2 from "@/assets/images/help/help-2.jpeg";
+import help3 from "@/assets/images/help/help-3.webp";
 
-import location1 from "@/public/images/locations/location-1.webp";
-import location2 from "@/public/images/locations/location-2.webp";
-import location3 from "@/public/images/locations/location-3.webp";
-import location4 from "@/public/images/locations/location-4.webp";
-import location5 from "@/public/images/locations/location-5.webp";
-import location6 from "@/public/images/locations/location-6.webp";
-import location7 from "@/public/images/locations/location-7.webp";
+import location1 from "@/assets/images/locations/location-1.webp";
+import location2 from "@/assets/images/locations/location-2.webp";
+import location3 from "@/assets/images/locations/location-3.webp";
+import location4 from "@/assets/images/locations/location-4.webp";
+import location5 from "@/assets/images/locations/location-5.webp";
+import location6 from "@/assets/images/locations/location-6.webp";
+import location7 from "@/assets/images/locations/location-7.webp";
 
 const pages = {
 	home: {

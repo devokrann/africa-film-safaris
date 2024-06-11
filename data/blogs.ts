@@ -1,4 +1,4 @@
-import blog1 from "@/public/images/blog/blog-1.webp";
+import blog1 from "@/assets/images/blog/blog-1.webp";
 
 const blogs = [
 	{

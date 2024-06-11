@@ -9,11 +9,11 @@ import { Icon } from "@tabler/icons-react";
 
 import Section from "@/layouts/Section";
 
-import brandLight from "@/public/icons/brand/logo-slogan-light.webp";
-import facebook from "@/public/icons/social/icons8-facebook.svg";
-import twitter from "@/public/icons/social/icons8-twitter.svg";
-import instagram from "@/public/icons/social/icons8-instagram.svg";
-import whatsapp from "@/public/icons/social/icons8-whatsapp.svg";
+import brandLight from "@/assets/icons/brand/logo-slogan-light.webp";
+import facebook from "@/assets/icons/social/icons8-facebook.svg";
+import twitter from "@/assets/icons/social/icons8-twitter.svg";
+import instagram from "@/assets/icons/social/icons8-instagram.svg";
+import whatsapp from "@/assets/icons/social/icons8-whatsapp.svg";
 
 import classes from "./Main.module.scss";
 

@@ -11,7 +11,7 @@ import NavigationMain from "@/components/navigation/Main";
 import DrawerNavMain from "@/components/drawers/nav/Main";
 
 import links from "@/data/links";
-import brandLight from "@/public/icons/brand/logo-slogan-light.webp";
+import brandLight from "@/assets/icons/brand/logo-slogan-light.webp";
 
 import classes from "./Main.module.scss";
 

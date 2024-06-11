@@ -10,7 +10,7 @@ import NextImage from "next/image";
 import { Burger, Drawer, NavLink, Image } from "@mantine/core";
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 
-import brandLight from "@/public/icons/brand/icon-light.svg";
+import brandLight from "@/assets/icons/brand/icon-light.svg";
 
 import MediaImage from "@/components/media/Image";
 
