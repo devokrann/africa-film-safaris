@@ -1,12 +1,12 @@
-import complianceMastery from "@/assets/images/services/service-1.webp";
-import itineraryDesign from "@/assets/images/services/service-2.jpeg";
-import groundSupport from "@/assets/images/services/service-3.webp";
-import accommodationPackages from "@/assets/images/services/service-4.webp";
-import droneFacilitation from "@/assets/images/services/service-5.webp";
-import countyPermits from "@/assets/images/services/service-6.webp";
-import localCommunity from "@/assets/images/services/service-7.webp";
-import localTalent from "@/assets/images/services/service-8.webp";
-import localGuides from "@/assets/images/services/service-9.webp";
+import complianceMastery from "@/public/images/services/service-1.webp";
+import itineraryDesign from "@/public/images/services/service-2.jpeg";
+import groundSupport from "@/public/images/services/service-3.webp";
+import accommodationPackages from "@/public/images/services/service-4.webp";
+import droneFacilitation from "@/public/images/services/service-5.webp";
+import countyPermits from "@/public/images/services/service-6.webp";
+import localCommunity from "@/public/images/services/service-7.webp";
+import localTalent from "@/public/images/services/service-8.webp";
+import localGuides from "@/public/images/services/service-9.webp";
 
 const services = [
 	{

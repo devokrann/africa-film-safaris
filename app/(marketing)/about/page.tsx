@@ -9,14 +9,14 @@ import Page from "@/layouts/Page";
 import Section from "@/layouts/Section";
 // import CarouselPartners from "@/components/carousel/Partners";
 
-import story1 from "@/assets/images/services/service-7.webp";
-import story2 from "@/assets/images/services/service-3.webp";
-import story3 from "@/assets/images/services/service-8.webp";
-import story4 from "@/assets/images/services/service-6.webp";
+import story1 from "@/public/images/services/service-7.webp";
+import story2 from "@/public/images/services/service-3.webp";
+import story3 from "@/public/images/services/service-8.webp";
+import story4 from "@/public/images/services/service-6.webp";
 
-import partner1 from "@/assets/images/partners/partner-1.webp";
-import partner2 from "@/assets/images/partners/partner-2.webp";
-import partner3 from "@/assets/images/partners/partner-3.webp";
+import partner1 from "@/public/images/partners/partner-1.webp";
+import partner2 from "@/public/images/partners/partner-2.webp";
+import partner3 from "@/public/images/partners/partner-3.webp";
 
 export const metadata: Metadata = {
 	title: "About",

@@ -16,14 +16,14 @@ import Section from "@/layouts/Section";
 
 import classes from "./Home.module.scss";
 
-import bg1 from "@/assets/images/backgrounds/carousel/bg-1.webp";
-import bgMobile1 from "@/assets/images/backgrounds/carousel/bg-1-mobile.webp";
-import bg2 from "@/assets/images/backgrounds/carousel/bg-2.webp";
-import bgMobile2 from "@/assets/images/backgrounds/carousel/bg-2-mobile.webp";
-import bg3 from "@/assets/images/backgrounds/carousel/bg-3.webp";
-import bgMobile3 from "@/assets/images/backgrounds/carousel/bg-3-mobile.webp";
-import bg4 from "@/assets/images/backgrounds/carousel/bg-4.webp";
-import bgMobile4 from "@/assets/images/backgrounds/carousel/bg-4-mobile.webp";
+import bg1 from "@/public/images/backgrounds/carousel/bg-1.webp";
+import bgMobile1 from "@/public/images/backgrounds/carousel/bg-1-mobile.webp";
+import bg2 from "@/public/images/backgrounds/carousel/bg-2.webp";
+import bgMobile2 from "@/public/images/backgrounds/carousel/bg-2-mobile.webp";
+import bg3 from "@/public/images/backgrounds/carousel/bg-3.webp";
+import bgMobile3 from "@/public/images/backgrounds/carousel/bg-3-mobile.webp";
+import bg4 from "@/public/images/backgrounds/carousel/bg-4.webp";
+import bgMobile4 from "@/public/images/backgrounds/carousel/bg-4-mobile.webp";
 
 const slides = [
 	{
@@ -105,7 +105,7 @@ export default function Home() {
 							</Flex>
 
 							<Flex direction={{ base: "column", sm: "row" }} align={"center"} gap={"xs"}>
-								<Button color="secLight.7" c={"priLight.8"} component={Link} href={"/contact"}>
+								<Button color="secLight.7" c={"priLight.9"} component={Link} href={"/contact"}>
 									Tell Us About Your Project
 								</Button>
 								<Button color="priLight.8" component={Link} href={"/services"}>
