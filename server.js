@@ -3,6 +3,7 @@ const { parse } = require("url");
 const next = require("next");
 
 const dev = process.env.NODE_ENV !== "production";
+
 const hostname = "localhost";
 const port = 3000;
 // when using middleware `hostname` and `port` must be provided below
@@ -12,6 +13,22 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
 	createServer(async (req, res) => {
 		try {
+			// // Set CORS headers
+			// res.setHeader("Access-Control-Allow-Credentials", true);
+			// res.setHeader("Access-Control-Allow-Origin", "*"); // Change '*' to your specific origin if needed
+			// res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS,PATCH,DELETE,POST,PUT");
+			// res.setHeader(
+			// 	"Access-Control-Allow-Headers",
+			// 	"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+			// );
+
+			// // Handle preflight request
+			// if (req.method === "OPTIONS") {
+			// 	res.statusCode = 200;
+			// 	res.end();
+			// 	return;
+			// }
+
 			// Be sure to pass `true` as the second argument to `url.parse`.
 			// This tells it to parse the query portion of the URL.
 			const parsedUrl = parse(req.url, true);
