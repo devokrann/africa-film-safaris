@@ -31,7 +31,7 @@ const contact = {
 	locations: [
 		{
 			place: "Main Office",
-			label: "410 Terry Ave. North, Seattle, WA 98109",
+			label: "Nairobi, Kenya 00100-8571",
 			link: "#",
 		},
 	],
