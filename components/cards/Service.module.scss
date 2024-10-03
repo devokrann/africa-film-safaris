@@ -1,0 +1,33 @@
+.card {
+	height: 100%;
+	background-color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-secDark-4));
+	color: light-dark(var(--mantine-color-bgLight-0), var(--mantine-color-bgLight-0));
+
+	@include hover {
+		.image {
+			transform: scale(1.1);
+		}
+
+		.statement {
+			color: light-dark(var(--mantine-color-secDark-4), var(--mantine-color-bgLight-0));
+		}
+	}
+}
+
+.title {
+	color: light-dark(var(--mantine-color-secDark-4), var(--mantine-color-bgLight-0));
+	min-height: 56px;
+}
+
+.statement {
+	transition: 0.25s all ease;
+}
+
+.imageContainer {
+	overflow: hidden;
+}
+
+.image {
+	transition: 0.25s all ease;
+	transform: scale(1.05);
+}

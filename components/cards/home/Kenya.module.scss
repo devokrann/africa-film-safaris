@@ -1,0 +1,30 @@
+.card {
+	background-color: light-dark(var(--mantine-color-secLight-light), var(--mantine-color-secLight-light));
+	height: 100%;
+	box-shadow: var(--mantine-shadow-sm);
+	border: 2px solid light-dark(var(--mantine-color-priLight-light), var(--mantine-color-priLight-light));
+	transition: 0.25s all ease;
+
+	@include hover {
+		background-color: light-dark(var(--mantine-color-priLight-light), var(--mantine-color-priLight-light));
+		box-shadow: none;
+
+		.image {
+			transform: scale(1.05);
+		}
+	}
+}
+
+.imgCont {
+	overflow: hidden;
+}
+
+.image {
+	transform: scale(1.01);
+	transition: 0.25s all ease;
+}
+
+.title {
+	color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-priLight-8));
+	transition: 0.25s all ease;
+}

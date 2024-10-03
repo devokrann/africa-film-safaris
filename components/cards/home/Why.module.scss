@@ -1,0 +1,32 @@
+.card {
+	height: 100%;
+	background-color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-secDark-4));
+	color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-bgLight-0));
+	cursor: pointer;
+	transition: 0.25s all ease;
+
+	@include hover {
+		background-color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-secDark-4));
+
+		.icon {
+			transform: scale(1.1);
+			background-color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-secDark-4));
+			color: light-dark(var(--mantine-color-secLight-7), var(--mantine-color-bgLight-0));
+		}
+	}
+}
+
+.title {
+	min-height: 64px;
+	color: light-dark(var(--mantine-color-secLight-7), var(--mantine-color-bgLight-0));
+}
+
+.desc {
+	color: light-dark(var(--mantine-color-bgLight-0), var(--mantine-color-bgLight-0));
+}
+
+.icon {
+	transition: 0.25s all ease;
+	background-color: light-dark(var(--mantine-color-secLight-7), var(--mantine-color-secDark-4));
+	color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-bgLight-0));
+}

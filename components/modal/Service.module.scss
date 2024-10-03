@@ -1,0 +1,19 @@
+.header,
+.body {
+	background-color: light-dark(var(--mantine-color-bgLight-0), var(--mantine-color-priDark-8));
+	color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-bgLight-0));
+}
+
+.close {
+	color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-bgLight-0));
+
+	@include hover {
+		background-color: light-dark(var(--mantine-color-priDark-light), var(--mantine-color-bgLight-light));
+		color: light-dark(var(--mantine-color-priLight-8), var(--mantine-color-bgLight-0));
+	}
+}
+
+.imageContainer {
+	overflow: hidden;
+	border-radius: var(--mantine-radius-md);
+}
